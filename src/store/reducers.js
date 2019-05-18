@@ -1,3 +1,9 @@
+// const getName = () => {
+// 	const user = localStorage.getItem('user');
+// 	const parse = JSON.parse(user);
+// 	return user.name;
+// };
+
 const initialState = {
 	tasks: [],
 	completedTasks: [],
@@ -22,9 +28,12 @@ const reducers = (state = initialState, action) => {
 			name: data.username, age: data.age, and then use from action.name, action.page
 			Right now, I'm expecting action.payload to be a user = {}, much like in initialState up top
 			*/
-		case 'SOME_ACTION_TYPE':
-			console.log(action);
-			return { ...state, user: { ...state.user, name: action.name } };
+		case 'SOME_ACTION_TYPE': {
+			const { user, completedTasks } = state;
+			completedTasks.push(action.name);
+			user.name = action.name;
+			return { ...state, user, completedTasks };
+		}
 		default:
 			return state;
 	}

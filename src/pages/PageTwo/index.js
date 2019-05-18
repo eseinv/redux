@@ -25,7 +25,6 @@ class PageTwo extends React.Component {
 	};
 
 	render() {
-		console.log(this.props);
 		return (
 			<div>
 				<h1>page two</h1>
@@ -34,6 +33,13 @@ class PageTwo extends React.Component {
 				</button>
 				<button className="btn btn-primary" onClick={this.changeName}>
 					Change Name to Ievgen
+				</button>
+				<button
+					className="btn btn-secondary"
+					onClick={() => this.props.history.push('/')}
+				>
+					{' '}
+					go to page one{' '}
 				</button>
 			</div>
 		);

@@ -1,4 +1,5 @@
 import React from 'react';
+import UserPanel from './userpanel';
 
 const PageOne = props => (
 	<div>
@@ -10,6 +11,7 @@ const PageOne = props => (
 			{' '}
 			go to page two{' '}
 		</button>
+		<UserPanel />
 	</div>
 );
 
