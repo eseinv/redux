@@ -20,7 +20,7 @@ class MainRouter extends React.Component {
 			<Wrapper>
 				<Router>
 					<Switch>
-						<Route path="/" component={PageOne} />
+						<Route path="/" exact component={PageOne} />
 						<Route path="/class" component={PageTwo} />
 					</Switch>
 				</Router>
