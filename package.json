@@ -54,7 +54,7 @@
     "react-images-loaded": "^2.0.0",
     "react-loader-spinner": "^2.3.0",
     "react-notifications": "^1.4.3",
-    "react-redux": "^6.0.0",
+    "react-redux": "^6.0.1",
     "react-router-dom": "^4.3.1",
     "react-switch": "^3.0.4",
     "redux": "^4.0.1",
