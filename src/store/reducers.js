@@ -22,6 +22,9 @@ const reducers = (state = initialState, action) => {
 			name: data.username, age: data.age, and then use from action.name, action.page
 			Right now, I'm expecting action.payload to be a user = {}, much like in initialState up top
 			*/
+		case 'SOME_ACTION_TYPE':
+			console.log(action);
+			return { ...state, user: { ...state.user, name: action.name } };
 		default:
 			return state;
 	}
