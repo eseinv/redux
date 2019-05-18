@@ -7,7 +7,6 @@ class UserPanel extends React.Component {
 	state = {};
 
 	render() {
-		console.log(this.props);
 		return (
 			<div>
 				<UserInfo user={this.props.state.user} />
@@ -17,7 +16,7 @@ class UserPanel extends React.Component {
 }
 
 UserPanel.propTypes = {
-	user: PropTypes.object,
+	state: PropTypes.object,
 };
 
 const mapStateToProps = state => state;

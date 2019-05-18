@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import UserPanel from './userpanel';
 
 const PageOne = props => (
@@ -14,5 +15,9 @@ const PageOne = props => (
 		<UserPanel />
 	</div>
 );
+
+PageOne.propTypes = {
+	history: PropTypes.object,
+};
 
 export { PageOne };

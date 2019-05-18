@@ -49,6 +49,7 @@ class PageTwo extends React.Component {
 PageTwo.propTypes = {
 	someAction: PropTypes.func,
 	changeName: PropTypes.func,
+	history: PropTypes.object,
 };
 
 const mapStateToProps = state => state;
