@@ -8,7 +8,6 @@ class App extends React.Component {
 	state = {};
 
 	render() {
-		console.log(this.props);
 		return (
 			<Provider store={store}>
 				<div className="container">
