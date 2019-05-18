@@ -32,7 +32,12 @@ class MainRouter extends React.Component {
 const mapStateToProps = state => state;
 const mapDispatchToProps = dispatch =>
 	bindActionCreators({ someAction }, dispatch);
-
+/*
+You'll always do this. If you want to connect a component to reduxm, it has to be
+a class based component. In this specific approach, you'd import all the actions
+you need, and pass them to bindActionCreators. This isn't my favorite approach
+considering it requires a whole bunch of imports if you need a whole bunch of actions
+*/
 export default connect(
 	mapStateToProps,
 	mapDispatchToProps,
