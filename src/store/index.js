@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import { createStore, combineReducers } from 'redux';
 import reducers from './reducers';
