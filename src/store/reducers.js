@@ -14,8 +14,14 @@ const initialState = {
 
 const reducers = (state = initialState, action) => {
 	switch (action.type) {
-		case 'ONE':
-			return state;
+		case 'SOME_ACTION':
+			return { ...state, user: action.payload };
+		/* I'm using action.payload here since inside the action I passed data
+			as payload, and type as type. I can pass data as chingadera, in which case,
+			i'd be using action.chingadera. I can also pass shit specific, so I can do
+			name: data.username, age: data.age, and then use from action.name, action.page
+			Right now, I'm expecting action.payload to be a user = {}, much like in initialState up top
+			*/
 		default:
 			return state;
 	}
